@@ -15,13 +15,14 @@ var scores, roundScore, activePlayer, dice;
 
 var scores = [0,0];
 var roundScore = 0;
-var activePlayer = 0;
+var activePlayer = 1;
 
 
 // Will choose a random number between 1 - 6
 
 dice = Math.floor(Math.random()*6)+1;
-console.log(dice);
 
 
 
+//document.querySelector('#current-' + activePlayer). textContent = dice;
+document.querySelector('#current' + activePlayer).innerHTML = '<em>' + dice + '</em>'; 
