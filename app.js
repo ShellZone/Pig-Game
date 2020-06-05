@@ -15,14 +15,33 @@ var scores, roundScore, activePlayer, dice;
 
 var scores = [0,0];
 var roundScore = 0;
+
+// Current Player
+
 var activePlayer = 1;
 
 
 // Will choose a random number between 1 - 6
 
-dice = Math.floor(Math.random()*6)+1;
+dice = Math.floor(Math.random() * 6) + 1;
 
 
+// TEXT CONTENT IS JUST FOR TEXT
 
-//document.querySelector('#current-' + activePlayer). textContent = dice;
-document.querySelector('#current' + activePlayer).innerHTML = '<em>' + dice + '</em>'; 
+// . innerHTML for HTML
+
+// document.querySelector('#current' + activePlayer).innerHTML = '<em>' + dice + '</em>'; 
+
+// SETTING
+
+document.querySelector('#current-' + activePlayer). textContent = dice;
+
+// READING
+var x = document.querySelector('#score-0').textContent; 
+console.log(x);
+
+// Query Selector used for SETTING and READING 
+
+// . style . what style = changed STYLE
+
+document.querySelector('.dice').style.display = 'none'; 
