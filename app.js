@@ -26,12 +26,6 @@ var activePlayer = 1;
 dice = Math.floor(Math.random() * 6) + 1;
 
 
-// TEXT CONTENT IS JUST FOR TEXT
-
-// . innerHTML for HTML
-
-// document.querySelector('#current' + activePlayer).innerHTML = '<em>' + dice + '</em>'; 
-
 // SETTING
 
 document.querySelector('#current-' + activePlayer). textContent = dice;
@@ -49,26 +43,11 @@ document.querySelector('.dice').style.display = 'none';
 // Add event Listener () GETS ADDED TO EXECUTION STACK END in message queue (scroll event AND click event)
 
 
-function btn(){
-
-}
-
-// call back function 
-
-btn();
-
-document.querySelector('.btn-roll').addEventListener('click', btn );
-
-
-// CallBack Function
-
-
-// Anonomys Function 
 
 document.querySelector('.btn-roll').addEventListener('click', function(){
     // 1. Random number
     dice = Math.floor(Math.random() * 6) + 1;
 } );
 
-// Anonymys Function
+
 
