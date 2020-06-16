@@ -18,7 +18,7 @@ var roundScore = 0;
 
 // Current Player 
 
-var activePlayer = 1;
+var activePlayer = 0;
 
 
 document.querySelector('.dice').style.display = 'none'; // Hiding the dice
@@ -64,6 +64,12 @@ document.querySelector('#score-' + activePlayer).textContent = scores[activePlay
 
     // Check if player won the game
 
+    
+        if (scores[activePlayer] >=100) {
+            document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
+        }
+        
+    
 
     //Next player
 nextPlayer();
