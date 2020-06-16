@@ -23,6 +23,7 @@ var activePlayer = 1;
 
 document.querySelector('.dice').style.display = 'none'; // Hiding the dice
 
+//
 document.getElementById('score-0').textContent = '0';
 document.getElementById('score-1').textContent = '0';
 document.getElementById('current-0').textContent = '0';
@@ -67,7 +68,15 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
 
 });
 
+document.querySelector('.btn-hold').addEventListener('click', function(){
+    // add CURRENT score to GLOBAL score
+    scores[activePlayer] += roundScore;
 
+    // Update the UI
+
+
+    // Check if player won the game
+})
 
 
 // document.querySelector('#current-' + activePlayer). textContent = dice;
