@@ -65,7 +65,7 @@ document.querySelector('#score-' + activePlayer).textContent = scores[activePlay
     // Check if player won the game
 
     // and hides dice on completion / displays winner 
-        if (scores[activePlayer] >=20) {
+        if (scores[activePlayer] >=100) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
@@ -95,15 +95,6 @@ function nextPlayer(){
     document.querySelector('.dice').style.display = 'none';
 
 }
-
-
-document.querySelector('.btn-hold').addEventListener('click', function(){
-    // Add CURRENT score to GLOBAL score 
-
-    // Update the UI
-
-    // Check if player won the game
-})
 
 
 // document.querySelector('#current-' + activePlayer). textContent = dice;
